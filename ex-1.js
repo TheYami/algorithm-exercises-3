@@ -1,11 +1,21 @@
 function findStudentIndex(students, searchStudent) {
-  // Start coding here
+  const result = students.indexOf(searchStudent)
+  if(result){
+    return result
+  }else{
+    return -1
+  }
 }
 
 /* 
-  1. ควรใช้ Search Algorithm ใดในการแก้โจทย์นี้ 
+  1. ควรใช้ Search Algorithm ใดในการแก้โจทย์นี้
+  - Linear search เพราะเป็นการหาตำแหน่ง ทีละตำแหน่ง โดยใช้การวนลูปไปเรื่อยๆจนกว่าจะเจอ
+
   2. ให้เหตุผลประกอบว่าทำไมถึงเลือกใช้ Search Algorithm นี้
+  - อาร์เรย์ที่ให้มาไม่มีการจัดเรียงลำดับ และจำนวนสมาชิกน้อย
+
   3. ให้ระบุว่า Big O Notation ของ Function นี้คือเท่าไร เพราะอะไร
+  - O(n) เพราะเป็นการหาทีละตำแหน่ง 
 */
 
 const students = [
